@@ -1,7 +1,7 @@
 # hQuery
 A brand new JavaScript Libary that allows you to code with h!
 
-It's very simmilar to jQuery, so I guess you can replace jQuery with hQuery in your code.
+It's very simmilar to jQuery & UmbrellaJS, so I guess you can replace jQuery with hQuery in your code.
 
 Some example code:
 ```js
