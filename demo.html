@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hQuery</title>
+</head>
+<body data-kasztan="nie">
+    <h1>Hello World</h1>
+    <div id="myDiv">
+        <i>h!</i>
+        <b>h!</b>
+    </div>
+    <input type="text" name="super" id="super" placeholder="loading">
+    <script src="./hQuery.js"></script>
+    <script>
+        console.log(h("h1").toggleClass("hentaje", "kukank").hasClass("hentaje"));
+        h("#myDiv").append(
+            "<em>h!</em>"
+        );
+        h("#super").attr(["placeholder", "disabled"], ["your name", "true"]);
+        console.log(h("#super").attr("placeholder"));
+        console.log(h("#myDiv").children());
+
+        console.log(h("body").data("kasztan", "oczywiscie ze nie"));
+
+        console.log(h("#myDiv").find("i").attr("style", "color: red"));
+
+        h("b").on("click", function () {
+            alert("h!");
+        });
+
+        console.log(h("b").parent());
+    </script>
+</body>
+</html>
