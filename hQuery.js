@@ -160,6 +160,14 @@ let hQuery = function (selector) {
                 }
             }, fast);
             return this;
+        },
+        css(property, value) {
+            if (value) {
+                el.style[property] = value;
+                return this;
+            } else {
+                return el.style[property];
+            };
         }
     };
 
