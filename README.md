@@ -1,5 +1,6 @@
 # hQuery
-A brand new JavaScript Libary that allows you to code with h
+A brand new JavaScript Libary that allows you to code with h!
+
 Some example code:
 ```js
 h("h1").toggleClass("bigtext", "herotext").hasClass("herotext");
